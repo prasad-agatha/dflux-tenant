@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div style="
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        background-color: #fafafa;
+      ">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" style="
+          border-collapse: collapse;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          background-color: #fafafa;
+        ">
+            <tbody>
+                <tr>
+                    <td align="center" style="
+                height: 100%;
+                margin: 0;
+                padding: 10px;
+                width: 100%;
+                border-top: 0;
+              ">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="
+                  border-collapse: collapse;
+                  border: 0;
+                  max-width: 600px !important;
+                ">
+                            <tbody>
+                                <tr>
+                                    <td style="
+                        background: #ffffff none no-repeat center/cover;
+                        background-color: #ffffff;
+                        background-image: none;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: cover;
+                        border-top: 0;
+                        border-bottom: 2px solid #eaeaea;
+                        padding: 9px 18px;
+                      ">
+                                        <div style="
+                          padding: 20px 18px 25px;
+                          text-align: center;
+                          width: 100%;
+                        "></div>
+                                        <h1 style="
+                          display: block;
+                          margin: 0;
+                          padding: 0;
+                          color: #202020;
+                          font-family: Helvetica;
+                          font-size: 26px;
+                          font-style: normal;
+                          font-weight: bold;
+                          line-height: 125%;
+                          letter-spacing: normal;
+                          text-align: left;
+                        ">
+                                            Dear {{user}},
+                                        </h1>
+                                        <br />
+                                        <p style="
+                      margin: 10px 0;
+                      padding: 0;
+                      color: #202020;
+                      font-family: Helvetica;
+                      font-size: 16px;
+                      line-height: 150%;
+                      text-align: left;
+                    ">The {{chart_name}} has been successfully updated on {{updated}}. Please click the below-provided
+                                            link to preview.</p>
+                                        <a
+                                            href="{{domain}}/shared/charts/{{token}}/">{{domain}}/shared/charts/{{token}}/</a>
+                                        <p style="
+                      margin: 10px 0;
+                      padding: 0;
+                      color: #202020;
+                      font-family: Helvetica;
+                      font-size: 16px;
+                      line-height: 150%;
+                      text-align: left;
+                    ">If in case of any problem reach out to us at {{email}}</p>
+                                        <p>Thanks & regards,</p>
+                                        <p>{{team}}</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block content %}
+<h3 class="mt-3">Tenants List</h3>
+<hr />
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Subdomain Prefix</th>
+            <th scope="col">Created At</th>
+            <th scope="col">Updatd At</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    {% for tenant in tenants %}
+    <tbody>
+        <tr>
+            <td>{{tenant.id}}</td>
+            <td>{{tenant.name}}</td>
+            <td>{{tenant.subdomain_prefix}}</td>
+            <td>{{tenant.created_at}}</td>
+            <td>{{tenant.updated_at}}</td>
+            <td><a href="/tenants/{{tenant.id}}/edit/">Edit</a></td>
+        </tr>
+        {% empty %}
+        <tr colspan="2" style="text-align: center">
+            <td>no tenants found</td>
+        </tr>
+    </tbody>
+    {% endfor %}
+</table>
+{% endblock content %}
